@@ -1,20 +1,56 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      teste
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="container"> 
+
+    <!-- <ul>
+      <li *ngFor ="let cursos of cursos">       
+          <span>{{cursos}}</span>                    
+      </li>
+    </ul> -->
+
+    <!-- <ion-list>
+      <ion-item *ngFor="let cursos of cursos">
+        <ion-label>{{cursos}}</ion-label>            
+      </ion-item>            
+    </ion-list> -->
+
+    <!-- <div>
+      <button (click)="onSave()">Teste</button>
+    </div> -->
+
+    <h1 style="color: pink; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">{{titulo}}</h1>
+      
+    <ion-item fill="solid">
+      <ion-label position="floating">Usuário</ion-label>
+      <ion-input [(ngModel)] = "user.nome" type="email"></ion-input>
+      <ion-note slot="helper">Digite o usuário</ion-note>
+      <ion-note slot="error">Usuário inválido</ion-note>
+    </ion-item>
+
+    <ion-item fill="solid">
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input [(ngModel)] = "user.senha" type="email"></ion-input>
+      <ion-note slot="helper">Digite a senha</ion-note>
+      <ion-note slot="error">Senha inválida</ion-note>
+    </ion-item>
+
+    <br>
+    <ion-button (click)="onSave()" href="\usuario">Entrar</ion-button>
+    <br><br>
+    <a style="color: gray; text-decoration: underline;" href={{link}}>Não tem uma conta? Cadastre-se</a>
   </div>
+
 </ion-content>

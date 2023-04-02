@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 style="text-align: center;"><strong>Listagem de Alunos</strong></h1>
+<table border="1" style="width: 100%">
+  <tr>
+    <th >ID</th>
+    <th>NOME</th>
+  </tr>
+  <tr *ngFor="let aluno of alunos" > 
+    <td style="text-align: center;">{{ aluno.id }}</td>
+    <td style="text-align: center;">{{ aluno.nome }}</td>
+  </tr>
+
+</table>
+</ion-content>

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Alunos } from '../model/alunos';
+import { Usuario } from '../model/usuario';
+import { HomeService } from './home.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +10,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor() { 
+  }
 
+  titulo = 'UNIFACISA';
+  link = "usuario";       // com variável
+
+  user: Usuario = new Usuario();
+
+  onSave(){
+     //alert("Seja Bem-vindo!");
+  }
 }

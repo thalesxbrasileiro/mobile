@@ -1,0 +1,24 @@
+{
+  "alunos": [
+    {
+      "id": 1,
+      "nome": "Lucas Lago"
+    },
+    {
+      "id": 2,
+      "nome": "Allan Dellon"
+    },
+    {
+      "id": 3,
+      "nome": "Thiago Almeida"
+    },
+    {
+      "id": 4,
+      "nome": "Thiago Azevedo"
+    },
+    {
+      "id": 5,
+      "nome": "Bruno Andrade"
+    }
+  ]
+}
